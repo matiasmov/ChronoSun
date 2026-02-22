@@ -6,20 +6,17 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/sun")
-@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "*")
 public class SunController {
 
- 
     private final SunService sunService;
 
- 
     public SunController(SunService sunService) {
         this.sunService = sunService;
     }
 
     @GetMapping("/search")
     public SunDataResponse search(@RequestParam String address) {
-     
         return sunService.getSunDataByAddress(address);
     }
 }

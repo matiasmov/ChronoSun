@@ -31,7 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+*.class
+*.jar
+.mtj.tmp/
+*.log
+.DS_Store
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 ### Secrets ###
-
 .env
